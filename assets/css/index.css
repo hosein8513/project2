@@ -1,5 +1,16 @@
-body {
+@font-face {
+    font-family: abasan;
+    src: url(/assets/fonts/384.Font.Farsi/Abasan_MRT.ttf);
+}
 
+
+
+
+
+
+body {
+    font-family: abasan !important;
+    direction: rtl;
     height: 100vh;
     text-align: center;
     background-color: rgba(149, 97, 63, 0.807);
@@ -107,69 +118,103 @@ img {
 
 .registersection {
     width: 25%;
-    height: 500px;
     background-color: white;
     display: inline-block;
     text-align: justify;
     padding: 10px;
     border: 1px solid black;
-border-radius: 15px;
+    border-radius: 15px;
 }
-.registersection h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+.registersection h1 {
     font-size: 30px;
     display: inline-block;
-    background: linear-gradient(to right , #FAFF00 , #00E0FF);
+    background: linear-gradient(to right, #FAFF00, #00E0FF);
     background-clip: text;
     color: rgba(0, 0, 0, 0);
 }
-.registersection span{
+
+.registersection span {
     color: red;
 }
-.formsection{
+
+.formsection {
     text-align: center;
 }
-.formsection .halfinput{
+
+.formsection .halfinput {
     text-align: justify;
     width: 45%;
     display: inline-block;
 }
-input{
+
+input {
     width: 90%;
     border: none;
-    background: linear-gradient(to right , #FF8A00 , #DBFF00);
+    background: linear-gradient(to right, #FF8A00, #DBFF00);
     border-radius: 100px;
-height: 30px;
+    height: 30px;
 }
-.formsection .lineinput{
-width: 90%; 
-text-align: justify;
-display: inline-block;  
-margin-top: 10px;
+
+.formsection .lineinput {
+    width: 90%;
+    text-align: justify;
+    display: inline-block;
+    margin-top: 10px;
 }
-.checkboxsection{
+
+.checkboxsection {
     text-align: justify;
 }
-.checkboxsection label{
+
+.checkboxsection label {
     vertical-align: super;
     font-size: 10px;
 }
-.checkboxsection input{
+
+.checkboxsection input {
     vertical-align: sub;
     width: 10px;
 }
-.halfinput input::placeholder{
+
+.halfinput input::placeholder {
     color: red;
 }
-.lineinput input::placeholder{
+
+.lineinput input::placeholder {
     color: red;
 }
-button{
+
+button {
+    font-family: abasan;
     display: block;
     background-color: #FF8A00;
     width: 50%;
     height: 25px;
     border: none;
     border-radius: 100px;
- margin: auto;
+    margin: auto;
+    cursor: pointer;
+    transition: all 1s;
 }
+
+.genderradio {
+    text-align: justify;
+    padding-right: 20px;
+    ;
+}
+
+.shadow {
+    box-shadow: 0 0 10px black inset;
+}
+
+button:hover {
+    box-shadow: 0 0 15px black;
+}
+
+button:focus {
+    box-shadow: 0 0 15px black inset;
+
+    background-color: #DBFF00;
+}
+

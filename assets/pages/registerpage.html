@@ -11,40 +11,51 @@
 <body>
     <section class="registersection">
         <div class="sectiontitle">
-            <h1>sign up</h1>
-            <h5>Let’s Create Your <span>Account</span></h5>
+            <h1>ثبت نام</h1>
+            <h5>بیایید یک <span> حساب</span> جدید بسازیم </h5>
         </div>
-        <form class="formsection">
-            <div class="halfinput">
-                <label for="">firstname</label><br>
-                <input placeholder="لطفا نام خود را وارد کنید" type="text" required>
+        <form class="formsection" action="/index.html">
+           <div class="shadow"> <div class="halfinput">
+                <label for="">نام</label><br>
+                <input placeholder="لطفا نام خود را وارد کنید" type="text" class="shadow" required>
             </div>
             <div class="halfinput">
-                <label for="">lastname</label><br>
-                <input placeholder="لطفا نام خانوادگی خود را وارد کنید" type="text" required>
+                <label for="">نام خانوادگی</label><br>
+                <input placeholder="لطفا نام خانوادگی خود را وارد کنید" type="text" class="shadow" required>
+            </div>
+            <div class="genderradio">
+                <label for="">حنسیت</label><br>
+                <div class="checkboxsection"> 
+                    <label for="">مذکر</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="">مونث</label>
+                    <input type="radio" name="gender" id="">
+                </div>
             </div>
             <div class="lineinput">
-    <label for="">email</label><br>
-    <input placeholder="لطفا ایمیل خود را وارد کنید" type="email" required>
+                <label for="">ایمیل</label><br>
+                <input placeholder="لطفا ایمیل خود را وارد کنید" type="email" class="shadow" required>
             </div>
             <div class="lineinput">
-    <label for="">retype email</label><br>
-    <input placeholder="لطفا ایمیل خود را مجددا وارد کنید" type="email" required>
+                <label for="">تایپ مجدد ایمیل</label><br>
+                <input placeholder="لطفا ایمیل خود را مجددا وارد کنید" type="email" class="shadow" required>
             </div>
             <div class="lineinput">
-    <label for="">password</label><br>
-    <input placeholder="لطفا رمز خود را وارد کنید" type="password" required>
+                <label for="">پسورد</label><br>
+                <input placeholder="لطفا رمز خود را وارد کنید" type="password" class="shadow" required>
             </div>
             <div class="lineinput">
-    <label for="">retype password</label><br>
-    <input placeholder="لطفا رمز خود را مجددا وارد کنید" type="password" required>
+                <label for="">تایپ مجدد پسورد</label><br>
+                <input placeholder="لطفا رمز خود را مجددا وارد کنید" type="password" class="shadow" required>
             </div>
             <div class="checkboxsection">
                 <input type="checkbox" name="" id="">
-                <label for="">I Agree To The Terms & Condition</label>
+                <label for="">باشزایط و قوانین موافق هستم</label>
             </div>
             <div class="lineinput">
-                <button type="submit">sign up</button>
+               
+                <button type="submit" class="shadow">ثبت نام</button>
+            </div>
             </div>
         </form>
     </section>
