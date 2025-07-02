@@ -154,6 +154,7 @@ input {
     background: linear-gradient(to right, #FF8A00, #DBFF00);
     border-radius: 100px;
     height: 30px;
+    font-family: inherit;
 }
 
 .formsection .lineinput {
@@ -186,7 +187,7 @@ input {
 }
 
 button {
-    font-family: abasan;
+    font-family: inherit;
     display: block;
     background-color: #FF8A00;
     width: 50%;
@@ -217,4 +218,31 @@ button:focus {
 
     background-color: #DBFF00;
 }
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
 
+@media (max-width: 413px) {
+    .registersection{
+        width: 100%;
+        padding: 20px 0 20px 0;
+    }
+    .title h1{
+        padding-right: 20px;
+    }
+   .main .paragraphsection{
+    width: 85%;
+    height: 80%;
+   }
+   .main .gallery , .part1 , .part2 , .part3{
+    width: 85%;
+   }
+   .paragraphsection p{
+    font-size: 13px;
+   }
+   .main{
+    height: auto;
+    background: none;
+   }
+}

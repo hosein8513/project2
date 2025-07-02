@@ -1,0 +1,43 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.static {
+    width: 100%;
+    height: 10%;
+    background-color: bisque;
+    position: static;
+}
+
+.relative {
+    width: 100%;
+    height: 10%;
+    background-color: aquamarine;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.fixed {
+    width: 40%;
+    height: 10%;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 5px;
+}
+.absolote{
+    width: 100%;
+    height: 10%;
+    background-color: chocolate;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+.stickey{
+    width: 100%;
+    height: 10%;
+    background-color: slategrey;
+    position: sticky;
+    top: 10px;
+}
